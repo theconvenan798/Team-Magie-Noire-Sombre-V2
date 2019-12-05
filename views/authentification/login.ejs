@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <%- include('./head.ejs') %>
+    <%- include('../head.ejs') %>
 
     <body >
 
@@ -10,8 +10,8 @@
             <div style="margin-left: 10%; width: 80%; margin-bottom: 10%; margin-top: 10%;">
                 <h3>Connexion:</h3>
                 <form id="form" action="...." method="POST" enctype="multipart/form-data">
-                    <label>Email:</label>
-                    <input id="email" class="w3-input" name="email" type="email" maxlength="64" required/><br/>
+                    <label>Email ou Pseudo:</label>
+                    <input id="auth-key" class="w3-input" name="auth-key" type="auth-key" maxlength="64" required/><br/>
                     <label>Mot de passe:</label>
                     <input id="password" class="w3-input" name="password" type="password" maxlength="32" required /><br/>
                     <button type="submit" class="w3-button w3-border w3-light-grey w3-hover-grey w3-round">Se connecter</button>
