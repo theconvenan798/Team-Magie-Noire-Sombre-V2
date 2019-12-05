@@ -3,7 +3,7 @@ const bodyParser = require('body-parser')
 const path = require('path')
 const app = express()
 
-const log = require('./routes/logRoutes')
+const log = require('./routes/logRoutes.js')
 
 app.use(require('morgan')('combined'))
 app.use(bodyParser.urlencoded({ extended: false }))
