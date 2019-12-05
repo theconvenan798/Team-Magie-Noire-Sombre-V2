@@ -9,8 +9,8 @@ app.use(require('morgan')('combined'))
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(require('express-session')({ secret: 'Secret key', resave: false, saveUninitialized: false }))
 
-app.use(authenticate.passport.initialize())
-app.use(authenticate.passport.session())
+//app.use(authenticate.passport.initialize())
+//app.use(authenticate.passport.session())
 
 // set the view engine to ejs
 app.set('view engine', 'ejs')
